@@ -6,10 +6,11 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: waka-box
-        uses: matchai/waka-box@v4.0.3
+      - name: Checks out the repository
+        uses: actions/checkout@master
+      - name: Update the Gist
+        uses: matchai/waka-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 4332fdc0f111d0ee95f76daf09491792
+          GIST_ID: 80c4cf9a0877a2ec5aeca05d8cac0f29
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
