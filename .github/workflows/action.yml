@@ -1,0 +1,2 @@
+- name: Github Action Contributor
+  uses: bornmay/Thank-Action@v.03.02
